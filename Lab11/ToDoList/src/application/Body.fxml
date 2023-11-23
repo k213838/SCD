@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="756.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="272.0" layoutY="49.0" prefHeight="52.0" prefWidth="179.0" text="To Do List" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="125.0" layoutY="196.0" prefHeight="33.0" prefWidth="94.0" text="Task" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TaskField" layoutX="238.0" layoutY="196.0" prefHeight="33.0" prefWidth="296.0" />
+      <Button fx:id="addButton" layoutX="257.0" layoutY="295.0" mnemonicParsing="false" onAction="#addTask" prefHeight="40.0" prefWidth="104.0" text="Add" />
+      <Button fx:id="viewButton" layoutX="398.0" layoutY="295.0" mnemonicParsing="false" onAction="#viewTasks" prefHeight="40.0" prefWidth="104.0" text="View" />
+      <ListView fx:id="taskList" layoutX="103.0" layoutY="385.0" prefHeight="200.0" prefWidth="551.0" />
+      <Button fx:id="removeButton" layoutX="272.0" layoutY="617.0" mnemonicParsing="false" onAction="#removeTask" prefHeight="40.0" prefWidth="104.0" text="Remove" />
+      <Button fx:id="completeButton" layoutX="398.0" layoutY="617.0" mnemonicParsing="false" onAction="#completeTask" prefHeight="40.0" prefWidth="104.0" text="Completed" />
+   </children>
+</AnchorPane>
